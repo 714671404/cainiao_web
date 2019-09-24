@@ -1,13 +1,12 @@
 <template>
-    
+    <div class="basic">
+        <v-header/>
+        <router-view/>
+        <v-footer/>
+    </div>
 </template>
-
 <script>
     export default {
-        name: "BasicLayout"
+        name: 'BasicLayout'
     }
 </script>
-
-<style scoped>
-
-</style>

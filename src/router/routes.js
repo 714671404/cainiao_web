@@ -1,5 +1,5 @@
 function path(path) {
-    return () => import(`@/views/${path}.vue`)
+    return () => import(`@/views/${path}.vue`);
 }
 export default [
     {
@@ -8,8 +8,8 @@ export default [
         component: path('Home')
     },
     {
-        path: '/about',
-        name: 'about',
-        component: path('About')
+        path: '/login',
+        name: 'login',
+        component: path('oauth/Login')
     }
 ]

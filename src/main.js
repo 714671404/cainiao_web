@@ -4,9 +4,11 @@ import router from "./router";
 import store from "./store";
 
 Vue.config.productionTip = false;
+import './views/components';
+import './assets/css/main.scss';
 
 new Vue({
   router,
   store,
-  render: h => h(App)
-}).$mount("#app");
+  ...App
+}).$mount('#app');

@@ -1,8 +1,25 @@
 <template>
     <div id="app">
-        <router-link to="/">home</router-link>
-        <router-link to="/about">about</router-link>
-        <a href="/test" target="_blank">跳转其他页面</a>
-        <router-view></router-view>
+        <transition name="page" mode="out-in">
+            <component :is="layout" v-if="layout" />
+        </transition>
     </div>
 </template>
+<script>
+    import Default from './views/layouts/default'
+    import Basic from './views/layouts/basic'
+    export default {
+        name: 'App',
+        data: () => ({
+            layout: "",
+        }),
+        components: {
+            Default, Basic
+        },
+        methods: {
+            setLayout(layout) {
+                this.layout = layout;
+            }
+        }
+    }
+</script>

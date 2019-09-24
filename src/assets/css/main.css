@@ -1,0 +1,17 @@
+input,button{list-style-type:none; border: none; outline: none;}
+button{ background: none;}
+li{list-style: none}
+a{text-decoration: none; color: #000;}
+a:link{text-decoration:none; }
+a:visited{text-decoration:none; }
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
+* {margin: 0;padding: 0;}
+
+body {
+    background: #f6f6f6;
+    color: #1a1a1a;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    font-weight: initial;
+}
